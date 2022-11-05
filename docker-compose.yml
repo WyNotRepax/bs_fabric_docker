@@ -1,0 +1,9 @@
+services:
+  mc:
+    build: .
+    ports:
+      - "25565:25565"
+    volumes:
+      - "./server:/var/server"
+    tty: true
+    stdin_open: true
